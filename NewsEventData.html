@@ -1,0 +1,150 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    
+    <script type="text/javascript" src="myscript_abstract.js"></script>
+    <script src="myscript_popup.js"></script>
+    
+    <head>
+        <title>Ida Mele's Data</title>
+        <link rel= "stylesheet" href="styles/style.css" type="text/css" />
+    </head>
+    
+    <body>
+        <table cellspacing="10" cellpadding="10" class="container">
+            <tbody>
+                <tr>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td class="page">
+                    
+               
+                 <h1>News Event Dataset</h1>
+                 <p class="description">			 
+                 We provide a collection of news documents labeled at the level of crisp events. <b><a href="#form">How to get the dataset?</a></b> <br />
+                 The collection spans 4 months (from March 1 to June 30, 2016) and comprises around 147K news documents from 9 popular news channels and published on 3 different online platforms: Twitter, RSS portals, and news websites.<br />
+                 More statistics about the collection are reported in the following table:<br />
+                 <br /><img src="events_news_stats.png" alt="events_news_stats" height="200" class = "center" />
+                 
+                 <br />
+                 
+                 </p>
+                 
+                 <p class="description">
+                 Given a subset of 57 events, we provide relevance labels of news documents for a total of about 4.3K labeled {event, news} pairs. The relevance judgments were collected using a crowdsourcing platform.
+                 Examples of events with news documents and their relevance are reported in the follwoing table: <br />
+                 <br /><img src="events_news_examples.png" alt="events_news_examples" height="300" class = "center" />
+                 <br /><br />
+                 More details about the collection are available in our <a href="pubs/ictir19-MC.pdf">short paper</a> published at <a href="http://www.ictir2019.org/">ICTIR 2019</a>.
+                 </p>
+                
+                <h2><a name="data_descr">Description of the dataset</a></h2>
+                 <p>The dataset consists of 4 files: <code>news_articles.txt</code>, <code>rss_feeds.txt</code>, <code>tweets.txt</code>, and <code>labels.txt</code><br /><br /></p>
+                 
+                 <h3><a name="news">1. News articles</a></h3>
+                 
+                 <p>
+                 We collected <i>24,156</i> news articles. The format of this file is as follows: <br />
+                 <code> document_identifier \t timestamp \t content </code><br />
+                 where the document_identifier is: <code>{RANDOM_ID}@{PLATFORM}_{CHANNEL}</code> (e.g.,<code>57948@NEWS_abcnews</code>), the timestamp is in the form <code>YYYY-MM-DD hh:mm:ss</code>, and the content was preprocessed. <br /><br />
+                 <fieldset>
+                     <legend>An extract from the file <code>news_articles.txt</code></legend>
+                     <p>
+                     57948@NEWS_abcnews &emsp; 2016-03-01 00:16:55 &emsp; ethiopian runners investigated doping sweden  ...<br />
+                     57949@NEWS_abcnews &emsp; 2016-03-01 00:50:31 &emsp; google says bears responsibility self driving car hit bus australian broadcasting....<br />
+                     57950@NEWS_abcnews   &emsp;  2016-03-01 01:11:22 &emsp; super tuesday candidates trade insults race white house gets dirty us election 2016...<br />
+                     </p>
+                 </fieldset>
+                 
+                 <br />
+                 </p>
+                 
+                 <h3><a name="rss">2. RSS feeds</a></h3>
+                 <p>
+                 We collected <i>43,380</i> RSS news feeds. The format of this file is as follows: <br />
+                 <code> document_identifier \t timestamp \t content </code><br />
+                 where the document_identifier is: <code>{RANDOM_ID}@{PLATFORM}_{CHANNEL}</code> (e.g.,<code>613@RSS_abcnews</code>), the timestamp is in the form <code>YYYY-MM-DD hh:mm:ss</code>, and the content was preprocessed. <br /><br />
+                 <fieldset>
+                     <legend>An extract from the file <code>rss_feeds.txt</code></legend>
+                     <p>
+                     613@RSS_abcnews &emsp; 2016-03-01 00:16:55 &emsp; ethiopian runners investigated doping <br />
+                     614@RSS_abcnews &emsp; 2016-03-01 00:50:31 &emsp; google trialling autonomous cars years prototype vehicle incident lexus first one self driving ...<br />
+                     615@RSS_abcnews &emsp; 2016-03-01 01:11:22 &emsp; super tuesday fight gets dirty  republican front runner donald trump his closest rival ... <br />
+                     </p>
+                 </fieldset>
+                 <br />
+                 </p>
+                 
+                 <h3><a name="tweets">3. Tweets</a></h3>
+                 <p>
+                 We collected <i>80,134</i> tweets. For copyright reason we do not provide the text of tweets, but we provide their ids. The format of the this file is as follows: <br />
+                 <code> document_identifier \t timestamp</code><br />
+                 where the document_identifier is: <code>{TWEET_ID}@{PLATFORM}_{CHANNEL}</code> (e.g.,<code>704456822321623040@TWT_abcnews</code>) and the timestamp is in the form <code>YYYY-MM-DD hh:mm:ss</code>. <br /><br />
+                 <fieldset>
+                     <legend>An extract from the file <code>tweets.txt</code></legend>
+                     <p>
+                     704456822321623040@TWT_abcnews &emsp; 2016-03-01 00:02:49<br />
+                     704460199248031744@TWT_abcnews &emsp; 2016-03-01 00:16:14<br />
+                     704461948193103872@TWT_abcnews &emsp; 2016-03-01 00:23:11<br />
+                     </p>
+                 </fieldset>
+                 <br />
+                 </p>
+                 
+                 <h3><a name="labels">4. Labels</a></h3>
+                 
+                <p>
+                For a subset of the news documents, we provide event-relevance labels. Overall, we gathered labels for <i>4,307</i> {event, news} pairs using the CrowdFlower crowdsourcing platforms.<br />
+                 
+                 The format of the this file is as follows: <br />
+                 <code> document_identifier \t event_keywords \t label (<code>yes</code> or <code>no</code>) \t contributor_confidence (a value from 0.0 to 1.0)</code>
+                 <br /><br />
+                 <fieldset>
+                     <legend>An extract from the file <code>labels.txt</code></legend>
+                     <p>
+                     2120@RSS_bbc &emsp;&emsp;&emsp;&emsp; japan, kumamoto, earthquake, damage, victims &emsp; yes &emsp; 1.0 <br />
+                     4632@RSS_cnn &emsp;&emsp;&emsp;&emsp; japan, kumamoto, earthquake, damage, victims  &emsp; yes &emsp; 1.0 <br />
+                     161876@NEWS_cbc &emsp;&emsp; japan, kumamoto, earthquake, damage, victims  &emsp; no &emsp;&nbsp;  0.7193 <br />
+                     131333@NEWS_bbc &emsp;&emsp; japan, kumamoto, earthquake, damage, victims &emsp; yes &emsp; 1.0 <br />
+                     2128@RSS_bbc &emsp;&emsp;&emsp;&emsp; japan, kumamoto, earthquake, damage, victims &emsp; yes &emsp; 1.0 <br />
+                     </p>
+                 </fieldset>
+                 <br /><br />
+                  </p>
+                  
+                  <h2><a name="form">How to get the dataset?</h2>
+                     <b> If you're interested in the dataset, please fill in this <a href="pubs/ictir19-form.pdf">form</a> and send it to <code>ida DOT mele AT isti DOT cnr DOT it</code></b>
+                  <h3>Please, remember to cite our paper.</h3>
+                  <fieldset> <legend>Citation</legend>
+                      <p>
+                      @inproceedings{ICTIR19-MC,<br />
+                      author    = {Ida Mele and Fabio Crestani},<br />
+                      title     = {A Multi-Source Collection of Event-Labeled News Document},<br />
+                      booktitle = {{The 2019 ACM SIGIR International Conference on the Theory of Information Retrieval}},<br />
+                      series = {{ICTIR'19}},<br />
+                      publisher = {{ACM}},<br />
+                      year      = {2019}<br />
+                      }
+                      </p>
+                  </fieldset>
+                  <br /><br />
+                  You can download the BibTeX file <a href="pubs/ictir19-MC.bib">here</a>.
+                  </p>
+             
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <hr />
+        
+        </td>
+        </tr>
+        
+        </tbody>
+        </table>
+    </body>
+</html>
