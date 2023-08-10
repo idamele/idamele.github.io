@@ -142,7 +142,12 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<ul>
 		<li> A. Formica, I. Mele, F. Taglino <br />
 		<b>A Template-based Approach for Question Answering over Knowledge Bases</b><br />
-		<i>Accepted at <i></i>Knowledge and Information Systems. Springer Nature</i>. 2023.  </i><br />
+		<i>Accepted at <i>Knowledge and Information Systems.</i> Springer Nature. 2023.<br />
+		 [<a onclick="toggle('KAIS23-FMT-abstract','link-KAIS23-FMT')" href="javascript:void(0)"><span id="link-KAIS23-FMT">Abstract</span></a>]
+  		<div id="KAIS23-FMT-abstract" style="display: none;">
+	  		 <br />
+		In this paper, we address the problem of answering complex questions formulated by users in natural language. Since traditional Information Retrieval systems are not suitable for complex questions, these questions are usually run over knowledge bases, such as Wikidata or DBpedia. We propose a semi-automatic approach for transforming a natural language question into a SPARQL query that can be easily processed over a knowledge base. The approach applies classification techniques to associate a natural language question with a proper query template from a set of predefined templates. The nature of our approach is semi-automatic as the query templates are manually written by human assessors, who are the experts of the  knowledge bases, whereas the classification and query processing steps are completely automatic. Our experiments on the large-scale CSQA dataset for question-answering corroborate the effectiveness of our approach.
+	     	</div>
 
 		</li>
 
@@ -150,7 +155,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 <b><a href="https://dl.acm.org/doi/abs/10.1145/3578519">Caching Historical Embeddings in Conversational Search.</a></b><br />
 <i>In Transactions on the Web (TWEB). ACM. 2022.  </i><br />
  [<a onclick="toggle('TWEB22-FMMNPT-abstract','link-TWEB22-FMMNPT')" href="javascript:void(0)"><span id="link-TWEB22-FMMNPT">Abstract</span></a>],
-            [<a href="https://dl.acm.org/doi/abs/10.1145/3578519">PDF</a>], [<a href="https://arxiv.org/abs/2211.14155">ArXiv</a>]
+            [<a href="https://dl.acm.org/doi/abs/10.1145/3578519">PDF</a>], [<a href="https://arxiv.org/abs/2211.14155">ArXiv</a>],
+	    [<a href="javascript:void(0);" onclick="popupBib('pubs/TWEB22-FMMNPT.bib');">BibTeX</a>]
              <div id="TWEB22-FMMNPT-abstract" style="display: none;">
 	   <br />
 		Rapid response, namely low latency, is fundamental in search applications; it is particularly so in interactive search sessions, 
@@ -195,11 +201,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 		<li>I. Mele, N. Tonellotto, O. Frieder, and R. Perego <br />
 			<b><a href="https://www.sciencedirect.com/science/article/pii/S0306457319307253?dgcid=author"> Topical Result Caching in Web Search Engines</a></b><br />
 			<i>In Information Processing &amp; Management. Volume 57, Issue 3, May 2020. Elsevier </i><br />
-			[<a onclick="toggle('ipm20-MTFP-abstract','link-ipm20-MTFP')" href="javascript:void(0)"><span id="link-ipm20-MTFP">Abstract</span></a>],
+	    [<a onclick="toggle('ipm20-MTFP-abstract','link-ipm20-MTFP')" href="javascript:void(0)"><span id="link-ipm20-MTFP">Abstract</span></a>],
             [<a href="https://www.sciencedirect.com/science/article/pii/S0306457319307253?dgcid=author">PDF</a>],
+	    [<a href="https://arxiv.org/abs/2001.03010">arXiv</a>],
             [<a href="javascript:void(0);" onclick="popupBib('pubs/ipm20-MTFP.bib');">BibTeX</a>]
-			[<a href="https://arxiv.org/abs/2001.03010">arXiv</a>]
-
 			<div id="ipm20-MTFP-abstract" style="display: none;">
 			<br /> Caching search results is employed in information retrieval systems to expedite query processing and reduce back-end server workload. Motivated by the observation that queries belonging to different topics have different temporal-locality patterns, we investigate a novel caching model called STD (Static-Topic-Dynamic cache), a refinement of the traditional SDC (Static-Dynamic Cache) that stores in a static cache the results of popular queries and manages the dynamic cache with a replacement policy for intercepting the temporal variations in the query stream. 
 			Our proposed caching scheme includes another layer for topic-based caching, where the entries are allocated to different topics (e.g., weather, education). The results of queries characterized by a topic are kept in the fraction of the cache dedicated to it. This permits to adapt the cache-space utilization to the temporal locality of the various topics and reduces cache misses due to those queries that are neither sufficiently popular to be in the static portion nor requested within short-time intervals to be in the dynamic portion.			
@@ -258,38 +263,58 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 		</li>
 		<li>O. Frieder, I. Mele, R. Perego, and N. Tonellotto<br />
 			<b><a href="https://patents.google.com/patent/US20210357434A1/en">Cache Optimization via Topics in Web Search Engines</a></b><br />
-			<i>US Patent App. 17/381,724. Nov. 18, 2021</i><br />
+			<i>US Patent #11,693,885. Jul. 04, 2023</i><br />
 		</li>
 	</ul>
 	
 	<h3>Conference Papers</h3>
 	<ul>
-		
-			<li> G. Abramo, C.A. D’Angelo, and I. Mele <br />
-	<b><a href = "https://art.torvergata.it/handle/2108/282012">Gendered impact of COVID-19 pandemic on research production: a cross-country analysis based on bioRxiv</a></b><br />
-	<i> In ISSI'21: Proceedings of the 18th International Conference on Scientometrics &amp; Informetrics</i><br />
-        [Full Paper],
-        	[<a onclick="toggle('issi21-ADAM-abstract','link-issi21-ADAM')" href="javascript:void(0)"><span id="link-issi21-ADAM">Abstract</span></a>],
-          [<a href="https://art.torvergata.it/handle/2108/282012">PDF</a>],
-	[<a href="javascript:void(0);" onclick="popupBib('pubs/ISSI21-ADAM.bib');">BibTeX</a>],
-         [<a href="https://arxiv.org/abs/2102.05360">arXiv</a>]        
-         <div id="issi21-ADAM-abstract" style="display: none;">
-The massive shock of the COVID-19 pandemic is already showing its negative effects on economies around the world, unprecedented in recent history. COVID-19 infections and containment measures have caused a general slowdown in research and new knowledge production. Because of the link between R&amp;D spending and economic growth, it is to be expected then that a slowdown in research activities will slow in turn the global recovery from the pandemic. Many recent studies also claim an uneven impact on scientific production across gender. In this paper, we investigate the phenomenon across countries, analysing preprint depositions. Differently from other works, that compare the number of preprint depositions before and after the pandemic outbreak, we analyse the depositions trends across geographical areas, and contrast after-pandemic depositions with expected ones. Differently from common belief and initial evidence, in few countries female scientists increased their scientific output while males plunged.
-       </div>
-        </li>
+
+		<li> A. De Nicola, A. Formica, I. Mele, M. Missikoff, F. Taglino <br />
+			<b>A Knowledge-based Approach to Business Process Analysis: from Informal to Formal</b><br />
+			Accepted at <i>DEXA'23: The 34th International Conference on Database and Expert Systems Applications.</i> Springer in their Lecture Notes in Computer Science (LNCS).<br />
+		        [<a onclick="toggle('dexa23-DFMMT-abstract','link-dexa23-DFMMT')" href="javascript:void(0)"><span id="link-dexa23-DFMMT">Abstract</span></a>]
+		         <div id="dexa23-DFMMT-abstract" style="display: none;"> <br />
+				Business Process Analysis (BPA) is a strategic activity, necessary for enterprises to model their business operations. 
+				It is a central activity in information system development, but also for business process design and reengineering. 
+				Despite several decades of research, the effectiveness of available BPA methods is still questionable. 
+				The majority of methodologies adopted by enterprises are rather qualitative and lack a formal basis, 
+				often yielding inadequate specifications. On the other hand, there are methodologies with a solid theoretical background, 
+				but they appear too cumbersome for the majority of enterprises.
+				This paper proposes a knowledge framework, referred to as BPA Canvas, conceived to be easily mastered by business people and, at the same time, 
+				based on a sound formal theory. The methodology starts with the construction of natural language knowledge artifacts and, 
+				then, progressively guides the user toward more rigorous structures. The formal approach of the methodology allows us to prove 
+				the correctness of the resulting knowledge base while maintaining the centrality of business people in the whole knowledge 
+				construction process.
+	 		</div>
+       		</li>
+
+		<li> G. Abramo, C.A. D’Angelo, and I. Mele <br />
+			<b><a href = "https://art.torvergata.it/handle/2108/282012">Gendered impact of COVID-19 pandemic on research production: a cross-country analysis based on bioRxiv</a></b><br />
+			<i> In ISSI'21: Proceedings of the 18th International Conference on Scientometrics &amp; Informetrics</i><br />
+		        [Full Paper],
+		        [<a onclick="toggle('issi21-ADAM-abstract','link-issi21-ADAM')" href="javascript:void(0)"><span id="link-issi21-ADAM">Abstract</span></a>],
+		        [<a href="https://art.torvergata.it/handle/2108/282012">PDF</a>],
+			[<a href="https://arxiv.org/abs/2102.05360">arXiv</a>],        
+		        [<a href="javascript:void(0);" onclick="popupBib('pubs/ISSI21-ADAM.bib');">BibTeX</a>]
+		         <div id="issi21-ADAM-abstract" style="display: none;">
+				The massive shock of the COVID-19 pandemic is already showing its negative effects on economies around the world, unprecedented in recent history. COVID-19 infections and containment measures have caused a general slowdown in research and new knowledge production. Because of the link between R&amp;D spending and economic growth, it is to be expected then that a slowdown in research activities will slow in turn the global recovery from the pandemic. Many recent studies also claim an uneven impact on scientific production across gender. In this paper, we investigate the phenomenon across countries, analysing preprint depositions. Differently from other works, that compare the number of preprint depositions before and after the pandemic outbreak, we analyse the depositions trends across geographical areas, and contrast after-pandemic depositions with expected ones. Differently from common belief and initial evidence, in few countries female scientists increased their scientific output while males plunged.
+		       </div>
+        	</li>
         
-        <li>I. Mele, C.I. Muntean, M. Aliannejadi, and N. Voskarides <br />
-	<b><a href="https://link.springer.com/chapter/10.1007%2F978-3-030-72240-1_86">MICROS: Mixed-Initiative ConveRsatiOnal Systems Workshop</a> </b> <br />
-	<i>In ECIR'21: Proceedings of the 43rd European Conference on Information Retrieval</i> <br />
-        [Workshop Description],
-	[<a onclick="toggle('ecir21-MMAV-abstract','link-ecir21-MMAV')" href="javascript:void(0)"><span id="link-ecir21-MMAV">Abstract</span></a>],
-	[<a href="https://link.springer.com/chapter/10.1007%2F978-3-030-72240-1_86">PDF</a>],
-	[<a href="javascript:void(0);" onclick="popupBib('pubs/ecir21-MMAV.bib');">BibTeX</a>],
-	[<a href="https://arxiv.org/abs/2101.10219">arXiv</a>]
-    <div id="ecir21-MMAV-abstract" style="display: none;">
-    The 1st edition of the workshop on Mixed-Initiative ConveRsatiOnal Systems (MICROS@ECIR2021) aims at investigating and collecting novel ideas and contributions in the field of conversational systems. Oftentimes, the users fulfill their information need using smartphones and home assistants. This has revolutionized the way users access online information, thus posing new challenges compared to traditional search and recommendation. The first edition of MICROS will have a particular focus on mixed-initiative conversational systems. Indeed, conversational systems need to be proactive, proposing not only answers but also possible interpretations for ambiguous or vague requests.
-    </div>
-    </li>
+		<li>
+			I. Mele, C.I. Muntean, M. Aliannejadi, and N. Voskarides <br />
+			<b><a href="https://link.springer.com/chapter/10.1007%2F978-3-030-72240-1_86">MICROS: Mixed-Initiative ConveRsatiOnal Systems Workshop</a> </b> <br />
+			<i>In ECIR'21: Proceedings of the 43rd European Conference on Information Retrieval</i> <br />
+			[Workshop Description],
+			[<a onclick="toggle('ecir21-MMAV-abstract','link-ecir21-MMAV')" href="javascript:void(0)"><span id="link-ecir21-MMAV">Abstract</span></a>],
+			[<a href="https://link.springer.com/chapter/10.1007%2F978-3-030-72240-1_86">PDF</a>],
+			[<a href="https://arxiv.org/abs/2101.10219">arXiv</a>],
+			[<a href="javascript:void(0);" onclick="popupBib('pubs/ecir21-MMAV.bib');">BibTeX</a>]			
+		    	<div id="ecir21-MMAV-abstract" style="display: none;">
+	    			The 1st edition of the workshop on Mixed-Initiative ConveRsatiOnal Systems (MICROS@ECIR2021) aims at investigating and collecting novel ideas and contributions in the field of conversational systems. Oftentimes, the users fulfill their information need using smartphones and home assistants. This has revolutionized the way users access online information, thus posing new challenges compared to traditional search and recommendation. The first edition of MICROS will have a particular focus on mixed-initiative conversational systems. Indeed, conversational systems need to be proactive, proposing not only answers but also possible interpretations for ambiguous or vague requests.
+	   	 	</div>
+  		</li>
 <li>I. Mele, C.I. Muntean, F.M. Nardini, R. Perego, and N. Tonellotto <br />
  <b> <a href ="https://trec.nist.gov/pubs/trec29/papers/HPCLab-CNR.C.pdf">Topical Enrichment of Conversational Search Utterances: Participation of the HPCLab-CNR Team in CAsT 2020</a></b><br />
 	<i>In TREC 2020</i><br />
@@ -674,6 +699,26 @@ This paper presents a ranking-based approach to the assessment of privacy risks 
 	<h3>Workshop Papers</h3>
 
 	<ul>
+		<li> A. De Nicola, A. Formica, I. Mele, M. Missikoff, F. Taglino <br />
+		<b>Towards a formal approach to a Knowledge Base supporting Business Process Analysis</b><br />
+		Accepted at <i> SEBD'23: 31st Symposium on Advanced Database Systems.</i> 2023.<br />
+        	[<a onclick="toggle('sebd23-DFMMT-abstract','link-sebd23-DFMMT')" href="javascript:void(0)"><span id="link-sebd23-DFMMT">Abstract</span></a>]
+        	<div id="sebd23-DFMMT-abstract" style="display: none;">
+			Business Process Analysis (BPA) is a strategic activity, necessary for enterprises to model their business operations. It is a central activity in information system development, but also for business process design and reengineering. Despite several decades of research, the effectiveness of available methods is still questionable. The majority of methodologies adopted by enterprises are rather qualitative and lack a formal basis, often yielding inadequate specifications. On the other hand, there are methodologies with a solid theoretical background, but they appear too cumbersome for the majority of enterprises.
+			This paper proposes a knowledge framework, referred to as BPA Canvas, conceived to be easily mastered by business people and, at the same time, based on a sound formal theory. The methodology starts with the construction of natural language knowledge artifacts and, then, progressively guides the user toward more rigorous structures. The formal approach of the methodology allows us to prove the correctness of the resulting knowledge base while maintaining the centrality of business people in the whole knowledge construction process.    
+ 		</div>
+        	</li>
+        
+        	<li> A. De Nicola, A. Formica, I. Mele, M. Missikoff, F. Taglino <br />
+		<b>Formal Approach to a Knowledge Base for Business Process Analysis</b><br />
+		Accepted at <i>ital-AI'23: Terzo Convegno Nazionale CINI sull'Intelligenza Artificiale.</i> 2023.<br />
+	        [<a onclick="toggle('italAI23-DFMMT-abstract','link-italAI23-DFMMT')" href="javascript:void(0)"><span id="link-italAI23-DFMMT">Abstract</span></a>]
+	         <div id="italAI23-DFMMT-abstract" style="display: none;">
+ 			Business Process Analysis (BPA) is a strategic activity, necessary for enterprises to model their business operations. It is a central activity in information system development, but also for business process design and reengineering. Despite several decades of research, the effectiveness of available methods is still questionable. The majority of methodologies adopted by enterprises are rather qualitative and lack a formal basis, often yielding inadequate specifications. On the other hand, there are methodologies with a solid theoretical background, but they appear too cumbersome for the majority of enterprises.
+			This paper proposes a knowledge framework, referred to as BPA Canvas, conceived to be easily mastered by business people and, at the same time, based on a sound formal theory. The methodology starts with the construction of natural language knowledge artifacts and, then, progressively guides the user toward more rigorous structures. The formal approach of the methodology allows us to prove the correctness of the resulting knowledge base while maintaining the centrality of business people in the whole knowledge construction process.   
+		</div>
+        	</li>
+
         <li>
             A. Giachanou, P. Rosso, I. Mele, and F. Crestani<br />
             <b><a href="http://ceur-ws.org/Vol-2140/paper8.pdf">Emotional Reactions Prediction of News Posts using Early Commenting Activity</a></b>
